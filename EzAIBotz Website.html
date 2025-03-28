@@ -1,0 +1,994 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzAIBotz - Ready-to-Use AI Chatbot Integrations</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(90deg, #4F46E5 0%, #7C3AED 100%);
+        }
+        .hero-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .hero-wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 80px;
+        }
+        .hero-wave .shape-fill {
+            fill: #FFFFFF;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold text-indigo-600">EzAIBotz</span>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#features" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Features
+                        </a>
+                        <a href="#solutions" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Solutions
+                        </a>
+                        <a href="#pricing" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Pricing
+                        </a>
+                        <a href="#contact" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-sm font-medium">
+                        Get Started
+                    </button>
+                </div>
+                <div class="-mr-2 flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative gradient-bg text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="sm:text-center lg:text-left">
+                        <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                            <span class="block">Ready-to-Use</span>
+                            <span class="block text-indigo-200">AI Chatbot Integrations</span>
+                        </h1>
+                        <p class="mt-3 text-base text-indigo-100 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            Deploy powerful AI chatbots on your website in minutes, not months. EzAIBotz provides pre-built, customizable chatbot solutions that integrate seamlessly with your existing systems.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                                    Get Started
+                                </a>
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 md:py-4 md:text-lg md:px-10">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://placehold.co/600x400/4F46E5/FFFFFF?text=AI+Chatbot" alt="AI Chatbot">
+        </div>
+        <div class="hero-wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Trusted By Section -->
+    <div class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
+                Trusted by innovative companies worldwide
+            </p>
+            <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+                <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img class="h-12" src="https://placehold.co/200x80/e2e8f0/64748b?text=COMPANY" alt="Company 1">
+                </div>
+                <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img class="h-12" src="https://placehold.co/200x80/e2e8f0/64748b?text=COMPANY" alt="Company 2">
+                </div>
+                <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                    <img class="h-12" src="https://placehold.co/200x80/e2e8f0/64748b?text=COMPANY" alt="Company 3">
+                </div>
+                <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+                    <img class="h-12" src="https://placehold.co/200x80/e2e8f0/64748b?text=COMPANY" alt="Company 4">
+                </div>
+                <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+                    <img class="h-12" src="https://placehold.co/200x80/e2e8f0/64748b?text=COMPANY" alt="Company 5">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-16 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Features</h2>
+                <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">
+                    Why Choose EzAIBotz?
+                </p>
+                <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+                    Our AI chatbots are designed to be powerful yet simple to implement.
+                </p>
+            </div>
+
+            <div class="mt-12">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Feature 1 -->
+                    <div class="pt-6 transition duration-300 ease-in-out feature-card">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                        <i class="fas fa-bolt text-white text-xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Quick Integration</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Deploy a fully functional AI chatbot on your website in less than 10 minutes with our simple copy-paste code snippet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="pt-6 transition duration-300 ease-in-out feature-card">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                        <i class="fas fa-brain text-white text-xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Advanced AI</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Powered by state-of-the-art language models that understand context and provide human-like responses to customer inquiries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="pt-6 transition duration-300 ease-in-out feature-card">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                        <i class="fas fa-paint-brush text-white text-xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Customizable</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Tailor the chatbot's appearance, behavior, and knowledge base to match your brand and business requirements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="pt-6 transition duration-300 ease-in-out feature-card">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                        <i class="fas fa-chart-line text-white text-xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Analytics</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Gain insights into customer interactions, frequently asked questions, and conversion rates through our comprehensive dashboard.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 5 -->
+                    <div class="pt-6 transition duration-300 ease-in-out feature-card">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                        <i class="fas fa-plug text-white text-xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Integrations</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Connect with your CRM, help desk, e-commerce platform, and other business tools for seamless data flow.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="pt-6 transition duration-300 ease-in-out feature-card">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                                        <i class="fas fa-shield-alt text-white text-xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Enterprise Security</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Bank-level encryption, GDPR compliance, and data privacy controls to keep your customer interactions secure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solutions Section -->
+    <div id="solutions" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Solutions</h2>
+                <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">
+                    Ready-Made Chatbots for Every Industry
+                </p>
+                <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+                    Pre-built solutions tailored for specific business needs.
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Solution 1 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-shopping-cart text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">E-Commerce Assistant</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Help customers find products, answer questions about shipping and returns, and provide personalized recommendations.
+                            </p>
+                            <ul class="mt-4 space-y-2">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Product recommendations</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Order tracking integration</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Cart recovery</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-4">
+                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                            Learn more <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solution 2 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-headset text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Customer Support</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Resolve common customer issues, answer FAQs, and escalate complex problems to human agents when necessary.
+                            </p>
+                            <ul class="mt-4 space-y-2">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">24/7 automated support</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Ticket creation</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Smart human handoff</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-4">
+                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                            Learn more <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solution 3 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-calendar-alt text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Appointment Scheduler</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Allow customers to book appointments, reschedule, and get reminders without human intervention.
+                            </p>
+                            <ul class="mt-4 space-y-2">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Calendar integration</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Automated reminders</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Rescheduling assistance</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-4">
+                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                            Learn more <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solution 4 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-university text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Financial Services</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Guide customers through loan applications, account inquiries, and financial planning.
+                            </p>
+                            <ul class="mt-4 space-y-2">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Secure authentication</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Application assistance</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Financial calculators</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-4">
+                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                            Learn more <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solution 5 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-graduation-cap text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Educational Assistant</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Help students with course selection, answer academic questions, and provide learning resources.
+                            </p>
+                            <ul class="mt-4 space-y-2">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Course recommendations</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Study resources</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Deadline reminders</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-4">
+                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                            Learn more <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solution 6 -->
+                <div class="bg-white overflow-hidden shadow rounded-lg">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-indigo-500 rounded-md p-3">
+                                <i class="fas fa-building text-white"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Real Estate Guide</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Assist potential buyers and renters with property searches, mortgage information, and viewing appointments.
+                            </p>
+                            <ul class="mt-4 space-y-2">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Property matching</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Virtual tours</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0">
+                                        <i class="fas fa-check text-green-500"></i>
+                                    </div>
+                                    <p class="ml-2 text-sm text-gray-500">Mortgage calculator</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 px-6 py-4">
+                        <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                            Learn more <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div id="pricing" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Pricing</h2>
+                <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">
+                    Simple, Transparent Pricing
+                </p>
+                <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+                    Choose the plan that fits your business needs.
+                </p>
+            </div>
+
+            <div class="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
+                <!-- Starter Plan -->
+                <div class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+                    <div class="p-6">
+                        <h2 class="text-lg leading-6 font-medium text-gray-900">Starter</h2>
+                        <p class="mt-4 text-sm text-gray-500">Perfect for small businesses and startups.</p>
+                        <p class="mt-8">
+                            <span class="text-4xl font-extrabold text-gray-900">$49</span>
+                            <span class="text-base font-medium text-gray-500">/mo</span>
+                        </p>
+                        <a href="#" class="mt-8 block w-full bg-indigo-50 border border-indigo-500 rounded-md py-2 text-sm font-semibold text-indigo-600 text-center hover:bg-indigo-100">
+                            Start free trial
+                        </a>
+                    </div>
+                    <div class="pt-6 pb-8 px-6">
+                        <h3 class="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">1 chatbot</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">5,000 messages/month</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Basic customization</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Email support</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+                    <div class="p-6">
+                        <h2 class="text-lg leading-6 font-medium text-gray-900">Professional</h2>
+                        <p class="mt-4 text-sm text-gray-500">For growing businesses with more traffic.</p>
+                        <p class="mt-8">
+                            <span class="text-4xl font-extrabold text-gray-900">$149</span>
+                            <span class="text-base font-medium text-gray-500">/mo</span>
+                        </p>
+                        <a href="#" class="mt-8 block w-full bg-indigo-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-700">
+                            Start free trial
+                        </a>
+                    </div>
+                    <div class="pt-6 pb-8 px-6">
+                        <h3 class="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">3 chatbots</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">25,000 messages/month</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Advanced customization</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Priority email support</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Analytics dashboard</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Basic integrations</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="border border-gray-200 rounded-lg shadow-sm divide-y divide-gray-200">
+                    <div class="p-6">
+                        <h2 class="text-lg leading-6 font-medium text-gray-900">Enterprise</h2>
+                        <p class="mt-4 text-sm text-gray-500">For organizations with advanced needs.</p>
+                        <p class="mt-8">
+                            <span class="text-4xl font-extrabold text-gray-900">$499</span>
+                            <span class="text-base font-medium text-gray-500">/mo</span>
+                        </p>
+                        <a href="#" class="mt-8 block w-full bg-indigo-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-indigo-700">
+                            Contact sales
+                        </a>
+                    </div>
+                    <div class="pt-6 pb-8 px-6">
+                        <h3 class="text-xs font-medium text-gray-900 tracking-wide uppercase">What's included</h3>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Unlimited chatbots</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">100,000+ messages/month</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Full customization</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">24/7 phone & email support</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Advanced analytics</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">All integrations</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Dedicated account manager</span>
+                            </li>
+                            <li class="flex space-x-3">
+                                <i class="fas fa-check flex-shrink-0 h-5 w-5 text-green-500"></i>
+                                <span class="text-sm text-gray-500">Custom AI training</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="bg-indigo-700 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base font-semibold text-indigo-200 tracking-wide uppercase">Testimonials</h2>
+                <p class="mt-1 text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight">
+                    Trusted by Businesses Worldwide
+                </p>
+            </div>
+            <div class="mt-12">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="px-6 py-8">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-12 w-12 rounded-full" src="https://placehold.co/100x100/e2e8f0/64748b?text=JD" alt="Jane Doe">
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-900">Jane Doe</h3>
+                                    <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-base text-gray-500">
+                                    "We implemented the EzAIBotz customer support chatbot and saw a 40% reduction in support tickets within the first month. The setup was incredibly simple, and the AI's responses are impressively accurate."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="px-6 py-8">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-12 w-12 rounded-full" src="https://placehold.co/100x100/e2e8f0/64748b?text=JS" alt="John Smith">
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-900">John Smith</h3>
+                                    <p class="text-sm text-gray-500">E-Commerce Manager, ShopEasy</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-base text-gray-500">
+                                    "Our conversion rate increased by 25% after adding the EzAIBotz e-commerce assistant to our website. It helps customers find products and answers questions instantly, even during peak hours."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="px-6 py-8">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-12 w-12 rounded-full" src="https://placehold.co/100x100/e2e8f0/64748b?text=SP" alt="Sarah Parker">
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-medium text-gray-900">Sarah Parker</h3>
+                                    <p class="text-sm text-gray-500">CTO, FinanceHub</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p class="text-base text-gray-500">
+                                    "As a financial services company, security was our top concern. EzAIBotz not only met our strict compliance requirements but also provided a seamless experience for our customers seeking financial advice."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+            <div class="bg-indigo-50 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
+                <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+                    <div class="lg:self-center">
+                        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                            <span class="block">Ready to transform your</span>
+                            <span class="block">customer experience?</span>
+                        </h2>
+                        <p class="mt-4 text-lg leading-6 text-gray-500">
+                            Get started with EzAIBotz today and deploy your first AI chatbot in minutes. No coding required.
+                        </p>
+                        <a href="#" class="mt-8 bg-indigo-600 border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-white hover:bg-indigo-700">
+                            Start Free Trial
+                        </a>
+                        <p class="mt-2 text-sm text-gray-500">
+                            No credit card required. 14-day free trial.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative -mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+                    <img class="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="https://placehold.co/600x400/4F46E5/FFFFFF?text=AI+Chatbot+Demo" alt="App screenshot">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Contact Us</h2>
+                <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">
+                    Get in Touch
+                </p>
+                <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+                    Have questions? Our team is here to help.
+                </p>
+            </div>
+
+            <div class="mt-12 max-w-lg mx-auto">
+                <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
+                    <div>
+                        <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" autocomplete="name" class="mt-1 block w-full py-3 px-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full py-3 px-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
+                        <input type="text" name="company" id="company" autocomplete="organization" class="mt-1 block w-full py-3 px-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full py-3 px-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <span class="text-2xl font-bold text-white">EzAIBotz</span>
+                    <p class="text-gray-300 text-base">
+                        Making AI chatbot integration simple and effective for businesses of all sizes.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">Facebook</span>
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">Instagram</span>
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">Twitter</span>
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-300">
+                            <span class="sr-only">LinkedIn</span>
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                Solutions
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        E-Commerce
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Customer Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Appointment Scheduling
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Financial Services
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                Support
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Documentation
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        API Reference
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Guides
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Help Center
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                Company
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Careers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Press
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                                Legal
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Terms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        Cookie Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-300 hover:text-white">
+                                        GDPR
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 xl:text-center">
+                    &copy; 2025 EzAIBotz, Inc. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget (Simulated) -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <button class="bg-indigo-600 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-indigo-700 transition-colors">
+            <i class="fas fa-comment-dots text-white text-2xl"></i>
+        </button>
+    </div>
+</body>
+</html>
